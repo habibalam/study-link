@@ -1,0 +1,131 @@
+</lightning-combobox>lightning-combobox
+
+style="margin-left:85%;margin-bottom:-100px;"
+
+
+Apex Class:
+
+public with sharing class ExampleController {
+
+    @AuraEnabled(cacheable=true)
+    public static List < Account > fetchAccounts() {
+
+        return [ SELECT Id, Name, Industry,
+               ( SELECT Id, FirstName, LastName FROM Contacts ),
+               ( SELECT Id, Name, StageName FROM Opportunities ) FROM Account LIMIT 5 ];
+       
+    }
+   
+}
+
+
+
+http://www.saravanansfdc.com/2020/06/how-to-use-refreshapex-to-refresh-list.html
+
+https://www.w3web.net/lwc-custom-vertical-tabs-dynamic-changed/
+
+https://www.w3web.net/insert-a-record-of-account-lightning-web-component/
+
+https://www.w3web.net/insert-a-record-of-account-lightning-web-component/
+
+<div class="slds-col slds-size_6-of-12 slds-p-horizontal--medium slds-m-bottom_medium">
+                <lightning-input label="AccountSite" value={getAccountRecord.Site} onchange={accSiteChange} ></lightning-input>
+            </div>
+
+https://www.w3web.net/lwc-custom-component-to-upload-multiple-file/
+
+https://www.salesforcemind.com/2019/09/salesforce-export-to-excel-with.html
+
+https://www.youtube.com/watch?v=jhVWetTBI2w
+
++'/jspdf/jspdf.umd.min.js'
+
+https://github.com/parallax/jsPDF
+
+https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.js_third_party_library
+
+
+/*const pdf = new jsPDF({
+        encryption: {
+            userPermissions: ["print", "modify", "copy", "annot-forms"]
+        }
+    });*/
+
+
+
+
+
+
+
+
+ const promises = recordInputs.map(recordInput => updateRecord(recordInput))
+    Promise.all(promises).then(result=>{
+              this.ShowToastEvent('Sucess','Update record')
+              this.draftValues=[];
+              return refreshApex(this.wireAccountsResult);  
+    }).catch(error=>{
+       this.ShowToastEvent('Error creating record',error.body.message,error)
+    })
+}
+
+
+ excel
+======
+https://www.apexhours.com/export-to-csv-xls-using-lightning-web-component/
+https://www.youtube.com/watch?v=VwwYjVrEQYQ
+
+https://www.w3web.net/lwc-custom-component-to-upload-multiple-file/
+
+https://www.w3web.net/display-account-related-contacts-in-lwc/
+
+
+
+https://www.infallibletechie.com/search/label/Salesforce%20Lightning%20Web%20Component
+
+https://www.infallibletechie.com/search/label/Salesforce%20Lightning%20Web%20Component
+
+http://amitsalesforce.blogspot.com/2018/12/Invoke-Apex-Controller-from-Lightning-Web-Component.html
+
+https://www.salesforcetroop.com/lwc/passing-string-data-parent-to-child-component
+https://www.w3web.net/create-lightning-datatable-row-actions-in-lwc/
+
+https://www.infallibletechie.com/2020/09/lightning-tree-grid-showing-account-and.html
+
+
+https://www.istockphoto.com/photo/man-reading-news-website-gm1223737250-359567749
+
+https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reactivity_fields
+
+https://niksdeveloper.com/salesforce/loop-through-list-in-lwc-and-javascript/
+
+https://niksdeveloper.com/salesforce/custom-link-in-lwc-datatable/
+
+https://github.com/KasukhelaGautam/Salesforce-LWC_Datatable_Icons_Links/blob/master/ContactDetailsController.cls
+
+https://www.salesforcecodecrack.com/2020/12/hyperlink-record-in-lightning-datatable.html
+
+https://www.w3web.net/display-account-related-contacts-in-lwc/
+
+https://github.com/salesforcetechbook/ExampleCodesofSessions/blob/master/force-app/main/default/lwc/multipleAccountInsertion/multipleAccountInsertion.html
+
+https://salesforce.stackexchange.com/questions/339732/add-hyperlink-to-record-page-in-lwc
+https://www.youtube.com/watch?v=W9-ANZgxXZI
+
+https://www.youtube.com/watch?v=q-S3gv2v1jM
+
+https://www.salesforcecodecrack.com/2019/07/lightning-datatable-with-row-actions-in.html
+
+https://medium.com/@ishaarora_49656/add-dynamic-data-to-chart-in-lwc-9d88e8b4516e
+https://jungleeforce.com/tag/lightning-web-component/
+
+
+https://www.chartjs.org/docs/latest/charts/bar.html
+https://salesforcethings.blogspot.com/2020/09/display-charts-in-lwc-using-3-party-js.html
+
+https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.js
+https://www.chartjs.org/docs/latest/charts/bar.html
+
+
+http://theblogreaders.com/lightning-message-service-lms/
+youtube.com/watch?v=L3KAdQj4_ME
+http://santanuboral.blogspot.com/2019/09/pagination-using-LWC.html
