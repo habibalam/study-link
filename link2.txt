@@ -17,3 +17,6 @@ https://www.salesforcecodecrack.com/2019/10/custom-data-table-with-multiple-row.
 https://www.w3web.net/display-current-record-from-recordid-in-lwc/
 
 https://niksdeveloper.com/salesforce/delete-record-in-lwc-using-deleterecord-of-uirecordapi/
+a
+b
+c
